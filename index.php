@@ -1,5 +1,5 @@
 <?php
 
-this is JointsWP theme
-
+echo "this is JointsWP theme";
+echo "new update!!";
 ?>
