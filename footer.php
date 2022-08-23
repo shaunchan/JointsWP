@@ -7,7 +7,8 @@
  * For more info: https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */			
  ?>
-					
+				
+				<div class="rowSpacer"></div>
 				<footer class="footer" role="contentinfo">
 					
 					<div class="inner-footer grid-x grid-margin-x grid-padding-x">
@@ -18,7 +19,7 @@
 	    					</nav>
 	    				</div>
 						
-						<div class="small-12 medium-12 large-12 cell">
+						<div class="small-12 medium-12 large-12 cell text-center">
 							<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 						</div>
 					

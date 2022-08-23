@@ -20,33 +20,15 @@
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta class="foundation-mq">
-		
-		<!-- If Site Icon isn't set in customizer -->
-		<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) { ?>
-			<!-- Icons & Favicons -->
-			<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-			<link href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png" rel="apple-touch-icon" />	
-	    <?php } ?>
-
-		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 		<?php wp_head(); ?>
 
 	</head>
 			
-	<body <?php body_class(); ?>>
+	<body>
 
-		<div class="off-canvas-wrapper">
-			
-			<!-- Load off-canvas container. Feel free to remove if not using. -->			
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-			
-			<div class="off-canvas-content" data-off-canvas-content>
-				
-				<header class="header" role="banner">
-							
-					 <!-- This navs will be applied to the topbar, above all content 
-						  To see additional nav styles, visit the /parts directory -->
-					 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-	 	
-				</header> <!-- end .header -->
+    <div class="grid-x align-center">
+        <div class="row large-12 border text-center" style="padding: 30px;">
+            This is the header bar
+        </div>
+    </div>
