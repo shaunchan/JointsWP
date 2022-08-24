@@ -28,7 +28,9 @@
 	<body>
 
     <div class="grid-x align-center">
-        <div class="row large-12 border text-center" style="padding: 30px;">
-            This is the header bar
-        </div>
+        <div class="row large-12 text-center" style="margin: 30px 0px 30px;">
+            JOOT LOGO
+				</div>
     </div>
+
+		<div class="rowSpacer"></div>

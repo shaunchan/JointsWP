@@ -10,5 +10,16 @@ get_header();
     </div>
 </div>
 
+<?php
+$args = array(
+    'post_type' => 'main_carousel'
+);
+
+$getPost = get_posts($args);
+
+
+print_r($getPost);
+?>
+
 
 <?php get_footer() ?>
