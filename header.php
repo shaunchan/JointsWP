@@ -27,10 +27,9 @@
 			
 	<body>
 
-    <div class="grid-x align-center">
-        <div class="row large-12 text-center" style="margin: 30px 0px 30px;">
-            JOOT LOGO
-				</div>
-    </div>
+	<?php
+	get_template_part( 'parts/nav', 'topbar' );
+	?>
+
 
 		<div class="rowSpacer"></div>

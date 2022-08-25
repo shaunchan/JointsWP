@@ -13,4 +13,14 @@
     line-height: 0px;
 }
 
-@import "../../../node_modules/@splidejs/splide/dist/css/splide-core.min";
+.white {
+    color: #fff;
+    font-weight: bold;
+}
+
+.top-bar ul {
+    background-color: none !important;
+}
+
+
+@import "../../../node_modules/@splidejs/splide/dist/css/splide.min";
