@@ -26,7 +26,7 @@ get_header();
                     ?>
                     <li class="splide__slide" style="width: 100%">
                         <img src="<?=$imageUrl?>" alt="">
-                        <div><?=$description?></div>
+                        <div><?=$post->post_title?></div>
                     </li>
                     <?php
                 }
@@ -44,8 +44,7 @@ get_header();
   new Splide( '.splide', {
     type: 'loop',
     drag: 'true',
-    autoplay: true,
-    autoWidth: true
+    autoplay: true
   }).mount();
 </script>
 <?php get_footer();?>

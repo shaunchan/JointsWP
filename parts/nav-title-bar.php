@@ -7,7 +7,7 @@ $breakpoint = "medium"; ?>
   <div class="title-bar-title"><?php _e( 'Menu', 'jointswp' ); ?></div>
 </div>
 
-<div class="top-bar" id="top-bar-menu">
+<div class="top-bar" id="top-bar-menu" style="background-color: #13CFC3;">
 	<div class="top-bar-left show-for-<?php echo $breakpoint ?>">
 		<ul class="menu">
 			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>

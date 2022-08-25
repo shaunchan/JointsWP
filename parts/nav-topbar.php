@@ -12,7 +12,7 @@
 			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?> Logo</a></li>
 		</ul>
 	</div>
-	<div class="top-bar-right">
+	<div class="">
 		<?php joints_top_nav(); ?>
 	</div>
 </div>

@@ -28,7 +28,8 @@
 	<body>
 
 	<?php
-	get_template_part( 'parts/nav', 'topbar' );
+	get_template_part( 'parts/nav', 'title-bar' );
+	//joints_top_nav();
 	?>
 
 
