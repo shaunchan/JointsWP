@@ -6,27 +6,30 @@
 get_header(); ?>
 			
 
-<div class="content">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div class="inner-content grid-x grid-margin-x grid-padding-x">
 
-		<main class="main small-12 medium-8 large-8 cell" role="main">
-		
-		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
-        ALl content here...
-        <?=the_title()?>
-		    	
-		    <?php endwhile; else : ?>
-		
-		   		<?php get_template_part( 'parts/content', 'missing' ); ?>
+<div class="grid-x align-center">
+	<div class="row small-11">
+		<div class="grid-x">
+			<div class="row large-6">
+				<img src="https://via.placeholder.com/550x309" alt="">
+			</div>
+			<div class="row large-6">
+				<div><h1><?=the_title()?></h1></div>
+				<div class="rowSpacer"></div>
+				<div><?=the_content()?></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-		    <?php endif; ?>
 
-		</main> <!-- end #main -->
+<?php endwhile; else : ?>
 
-	</div> <!-- end #inner-content -->
+	<?php get_template_part( 'parts/content', 'missing' ); ?>
 
-</div> <!-- end #content -->
+<?php endif; ?>
+
 
 <?php get_footer(); ?>
