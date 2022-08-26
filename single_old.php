@@ -6,6 +6,7 @@
 get_header(); ?>
 			
 
+			YOLO
 <div class="content">
 
 	<div class="inner-content grid-x grid-margin-x grid-padding-x">
@@ -14,8 +15,7 @@ get_header(); ?>
 		
 		    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		
-        ALl content here...
-        <?=the_title()?>
+		    	<?php get_template_part( 'parts/loop', 'single' ); ?>
 		    	
 		    <?php endwhile; else : ?>
 		
@@ -24,6 +24,8 @@ get_header(); ?>
 		    <?php endif; ?>
 
 		</main> <!-- end #main -->
+
+		<?php get_sidebar(); ?>
 
 	</div> <!-- end #inner-content -->
 
